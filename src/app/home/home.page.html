@@ -10,9 +10,9 @@
     <ion-row>
       <ion-col size="12" size-sm size-md size-lg>
         <ion-item>
-          <ion-textarea autofocus auto-grow="true" placeholder="Write..."></ion-textarea>
+          <ion-textarea [(ngModel)]="thought" autofocus auto-grow="true" placeholder="Write..."></ion-textarea>
         </ion-item>
-        <ion-button color="primary" expand="block">Post</ion-button>
+        <ion-button color="primary" expand="block" (click)="post_thought()">Post</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

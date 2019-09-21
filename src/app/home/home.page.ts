@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public thought: string = null
+  thoughts: Array<string> = []
+    
   constructor() {}
 
+  post_thought(){
+    this.thoughts.unshift(this.thought)
+    console.log(this.thoughts)
+  }
 }
