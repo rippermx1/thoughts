@@ -27,11 +27,12 @@
       </div>
     </div>
 
-    <div class="row" *ngIf="thoughtsList">
-      <div class="collection" *ngFor="let item of thoughtsList">
-        <div class="collection-item">
-          <h6 class="truncate">{{ item.thought }}<a href="" class="secondary-content">See more...</a></h6>
-        </div>
+    <div class="row" *ngIf="thoughtsList.length > 0">
+        <h5 class="center-align">Latest thoughts...</h5>
+        <div class="collection" *ngFor="let item of thoughtsList">
+            <div class="collection-item">
+              <h6 class="truncate">{{ item.thought }}<a href="" class="secondary-content">See more...</a></h6>
+            </div>
       </div>
     </div>
 

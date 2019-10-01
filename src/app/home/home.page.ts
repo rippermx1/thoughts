@@ -20,7 +20,7 @@ export class HomePage {
     });
   }
   publishThought() {
-    let thought: IThought = {
+    const thought: IThought = {
       thought: this.thoughtsForm.get('thoughtText').value
     };
     this.thoughtsList.push(thought);
